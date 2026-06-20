@@ -1,0 +1,68 @@
+2026/06/19 19:29:44 discovering members across 26 list page(s)…
+2026/06/19 19:29:54 found 1290 unique members
+2026/06/19 19:29:54 fetching 1290 new detail page(s) (concurrency=6, rps=4.0, checksites=true)…
+2026/06/19 19:30:06 …25 collected
+2026/06/19 19:30:15 …50 collected
+2026/06/19 19:30:23 …75 collected
+2026/06/19 19:30:34 …100 collected
+2026/06/19 19:30:45 …125 collected
+2026/06/19 19:30:55 …150 collected
+2026/06/19 19:31:07 …175 collected
+2026/06/19 19:31:17 …200 collected
+2026/06/19 19:31:28 …225 collected
+2026/06/19 19:31:41 …250 collected
+2026/06/19 19:31:51 …275 collected
+2026/06/19 19:32:05 …300 collected
+2026/06/19 19:32:14 …325 collected
+2026/06/19 19:32:25 …350 collected
+2026/06/19 19:32:37 …375 collected
+2026/06/19 19:32:47 …400 collected
+2026/06/19 19:32:57 …425 collected
+2026/06/19 19:33:08 …450 collected
+2026/06/19 19:33:18 …475 collected
+2026/06/19 19:33:29 …500 collected
+2026/06/19 19:33:42 …525 collected
+2026/06/19 19:33:53 …550 collected
+2026/06/19 19:34:05 …575 collected
+2026/06/19 19:34:15 …600 collected
+2026/06/19 19:34:27 …625 collected
+2026/06/19 19:34:36 …650 collected
+2026/06/19 19:34:45 …675 collected
+2026/06/19 19:34:55 …700 collected
+2026/06/19 19:35:07 …725 collected
+2026/06/19 19:35:19 …750 collected
+2026/06/19 19:35:29 …775 collected
+2026/06/19 19:35:38 …800 collected
+2026/06/19 19:35:50 …825 collected
+2026/06/19 19:36:01 …850 collected
+2026/06/19 19:36:13 …875 collected
+2026/06/19 19:36:21 …900 collected
+2026/06/19 19:36:31 …925 collected
+2026/06/19 19:36:42 …950 collected
+2026/06/19 19:36:54 …975 collected
+2026/06/19 19:37:05 …1000 collected
+2026/06/19 19:37:15 …1025 collected
+2026/06/19 19:37:26 …1050 collected
+2026/06/19 19:37:39 …1075 collected
+2026/06/19 19:37:48 …1100 collected
+2026/06/19 19:38:01 …1125 collected
+2026/06/19 19:38:13 …1150 collected
+2026/06/19 19:38:26 …1175 collected
+2026/06/19 19:38:36 …1200 collected
+2026/06/19 19:38:48 …1225 collected
+2026/06/19 19:39:02 …1250 collected
+2026/06/19 19:39:14 …1275 collected
+2026/06/19 19:39:24 collected 1290 new this run; wrote 1290 total leads to leads.xlsx
+
+=== summary ===
+total leads: 1290
+web status:
+  none       425
+  dead       310
+  live       555
+fit tags:
+  compliance       713
+  whatsapp-crm     776
+  website+hosting  425
+  website-recovery 310
+  fresh-setup      3

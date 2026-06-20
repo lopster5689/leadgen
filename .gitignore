@@ -1,0 +1,13 @@
+# compiled binary
+/leadgen
+# lead data / PII (never commit)
+pool.csv
+*pool.csv
+leads.csv
+leads_*.csv
+*.xlsx
+batches/
+runs.jsonl
+# python
+__pycache__/
+*.pyc
