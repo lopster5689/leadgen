@@ -26,6 +26,7 @@ var (
 type memberRef struct {
 	ID   string
 	Name string
+	lead *Lead // pre-parsed (inline-directory sources like directoryiia); nil => Fetch does a detail fetch
 }
 
 // discoverMembers walks the requested member-list pages and returns unique

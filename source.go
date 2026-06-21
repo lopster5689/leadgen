@@ -12,7 +12,7 @@ type Source struct {
 }
 
 // sourceNames lists registered sources (for `leadgen sources`).
-var sourceNames = []string{"delhichamber", "website"}
+var sourceNames = []string{"delhichamber", "website", "directoryiia"}
 
 func buildSource(name, letters string) (Source, bool) {
 	switch name {
@@ -26,6 +26,8 @@ func buildSource(name, letters string) (Source, bool) {
 		}, true
 	case "website":
 		return Source{Name: "website", Discover: discoverWebsite, Fetch: fetchWebsite}, true
+		case "directoryiia":
+			return Source{Name: "directoryiia", Discover: discoverDirectoryIIA, Fetch: fetchDirectoryIIA}, true
 	}
 	return Source{}, false
 }
