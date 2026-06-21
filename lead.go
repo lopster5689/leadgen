@@ -57,8 +57,43 @@ func leadFromRow(r []string) *Lead {
 
 var pvtRe = regexp.MustCompile(`(?i)\bpvt\b|\bprivate\b|\(p\)`)
 
+// placeholder local-parts / domains that scrapers pick up as boilerplate, not real contacts.
+var placeholderLocal = map[string]bool{
+	// only UNAMBIGUOUS placeholders — NOT mail/email/user/name (mail@realco.com is a real inbox)
+	"john.doe": true, "jane.doe": true, "johndoe": true, "test": true, "tester": true,
+	"testing": true, "example": true, "sample": true, "demo": true,
+	"abc": true, "xyz": true, "asdf": true, "noreply": true,
+	"no-reply": true, "donotreply": true, "do-not-reply": true,
+	"yourname": true, "firstname": true, "lastname": true,
+}
+var placeholderDomain = map[string]bool{
+	"example.com": true, "example.org": true, "example.net": true, "test.com": true,
+	"domain.com": true, "email.com": true, "sample.com": true, "yourdomain.com": true,
+	"company.com": true, "abc.com": true, "xyz.com": true, "sentry.io": true, "wixpress.com": true,
+}
+
+// cleanEmail drops obvious placeholder/junk emails so they never enter the pool or the
+// hub. Handles comma-separated lists (FIA/directoryiia emit multiple); returns the
+// surviving real emails lowercased, or "" if none remain.
+func cleanEmail(s string) string {
+	var out []string
+	for _, part := range strings.Split(s, ",") {
+		e := strings.ToLower(strings.TrimSpace(part))
+		at := strings.LastIndex(e, "@")
+		if at <= 0 || at == len(e)-1 {
+			continue // empty or malformed
+		}
+		if placeholderLocal[e[:at]] || placeholderDomain[e[at+1:]] {
+			continue
+		}
+		out = append(out, e)
+	}
+	return strings.Join(out, ", ")
+}
+
 // score applies rule-based fit tags and a suggested outreach angle.
 func (l *Lead) score() {
+	l.Email = cleanEmail(l.Email) // drop scraped placeholder/junk emails before they pool
 	var tags []string
 	if pvtRe.MatchString(l.Company) {
 		tags = append(tags, "compliance")
