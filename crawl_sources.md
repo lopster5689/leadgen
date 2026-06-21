@@ -7,6 +7,17 @@ Research toward a deduplicated, ICP-matched list of **publicly crawlable** lead 
 **Status legend:** `VERIFIED` = fetched live, confirmed server-rendered + contact data; `LIKELY` = known directory, structure not yet fetched; `HARD` = JS/postback/anti-bot; `UNVERIFIED` = exists, needs a live check.
 **Spam/anti-bot EXCLUDED on purpose:** JustDial, IndiaMART, Sulekha, TradeIndia, Practo — ToS-prohibited + bot-blocked.
 
+### Now WIRED INTO INGESTION (leadgen sources + daily cron)
+- **delhichamber** (#1) — ~1281 leads.
+- **directoryiia** (#2) — 191 leads, ~78% email.
+- **fiafaridabad** (#3) — **296 leads, 100% email** (NCR manufacturers). Twenty emailable pool 508 → 804.
+
+### Inspected on close read — NOT cleanly crawlable (dropped, honest):
+- **Apex Chamber Delhi** (#52) — member list is **names only**, no contact data.
+- **ELCINA** (#55) — no clean repeating member block; member emails not extractable.
+- **CODISSIA** (#82) — no public member directory on the site.
+- **CICU** (#96) — full member list is **request-only** (gated); only a small YBLF subset is public.
+
 Columns: Quality (1-10 lead fit) · Volume (1-10 count) · Difficulty (Easy/Medium/Hard) · Data (fields available) · ICP match.
 
 ---
