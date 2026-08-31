@@ -47,3 +47,13 @@ automatically. Read this before planning outreach or changing the pipeline.
 
 ### 2026-06-20T06:05:34Z — next (batch delivered)
 - delivered 50 (50 reachable) -> batches/batch-20260620-0605.xlsx | 1181 fresh remaining
+
+### 2026-06-21T11:44:28Z — crawl crawl (directoryiia, letters=ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+- discovered 193 | new this run 193 | total 1474 | checksites=true
+- web status: dead 353, live 576, none 545
+- fit tags: compliance 758, fresh-setup 3, website+hosting 545, website-recovery 353, whatsapp-crm 885
+
+### 2026-06-21T12:38:47Z — crawl crawl (fiafaridabad, letters=ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+- discovered 302 | new this run 298 | total 1772 | checksites=false
+- web status: dead 353, live 576, none 545, unchecked 298
+- fit tags: compliance 931, fresh-setup 3, website+hosting 545, website-recovery 353, whatsapp-crm 893
