@@ -5,6 +5,9 @@ pool.csv
 *pool.csv
 leads.csv
 leads_*.csv
+# mx_profile.py --clean output (leadhub/scripts/mx_profile.py)
+*.clean.csv
+*.trashed.csv
 *.xlsx
 batches/
 runs.jsonl
