@@ -14,3 +14,8 @@ runs.jsonl
 # python
 __pycache__/
 *.pyc
+*.csv
+*.xlsx
+*.db
+*.db-*
+.claude/
